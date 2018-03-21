@@ -2689,8 +2689,10 @@ the xsltproc executable.
                 <p>This is a short list that ends a subsection, so can be used to address the necessary spacing.  We also test two XML elements separated by a space (which should not go missing).<ol cols="2" label="(a)">
                     <li>One item.</li>
                     <li><em>Two</em> <alert>ducks</alert>.</li>
-                    <li>Three items.</li>
+                    <li>Three items.  Plus a few more words to check that long entries in a two column list look good.</li>
                     <li>Four items.</li>
+                    <li>Another long entry that simultaneously tests that long entries look good in a list,
+                        and also tests an odd nunber of entries in a two column list.</li>
                 </ol></p>
             </subsection>
 
@@ -6833,6 +6835,44 @@ the xsltproc executable.
 
                 <p><latex /> has trouble with brackets that end up inside optional arguments, so this is only a check on the defense against that.</p>
             </subsection>
+
+            <subsection>
+                <title>Drawing some graphs of functions</title>
+
+<p>Plot the the derivative on the axes below.
+Draw the curve, and then make adjustments.
+</p>
+
+<sbsgroup width="65%">
+                    <sidebyside>
+                            <image source="images/top_graph.svg" />
+</sidebyside>
+<sidebyside>
+                            <image source="images/bottom_graph.svg" drawonme="1"/>
+</sidebyside>
+</sbsgroup>
+            </subsection>
+
+
+    <exercises xml:id="readingquestions-S" mode="reading" source="fcla">
+        <title>Reading Questions</title>
+        <exercise xml:id="reading-S-1">
+            <statement>
+                <p>Summarize the three conditions that allow us to quickly test if a set is a subspace.</p>
+            </statement>
+        </exercise>
+        <exercise xml:id="reading-S-2">
+            <statement>
+                <p>Consider the set of vectors<me>W=\left\{\colvector{a\\b\\c}\ : \ 3a-2b+c=5\right\}</me>.  Is the set <m>W</m> a subspace of <m>\mathbb C^{3}</m>?  Explain your answer.</p>
+            </statement>
+        </exercise>
+        <exercise xml:id="reading-S-3">
+            <statement>
+                <p>Name five general constructions of sets of column vectors (subsets of <m>\mathbb C^{m}</m>) that we now know as subspaces.</p>
+            </statement>
+        </exercise>
+</exercises>
+
         </section>
 
         <section>

@@ -365,10 +365,33 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <xsl:variable name="ident">
         <xsl:apply-templates select="." mode="internal-id" />
     </xsl:variable>
-    <section class="{local-name(.)}" id="{$ident}">
+
+<!-- this needs to be redone, because the construction does not seem
+     to lend itself to adding to the class of a section
+ -->
+    <xsl:choose>
+         <xsl:when test="@mode='assign'">
+    <section class="{local-name(.)} assign" id="{$ident}">
         <xsl:apply-templates select="." mode="section-header" />
         <xsl:apply-templates />
     </section>
+        </xsl:when>
+         <xsl:when test="@mode">  <!-- should check that mode="reading" -->
+    <section class="{local-name(.)} readingquestions" id="{$ident}">
+        <xsl:apply-templates select="." mode="section-header" />
+        <xsl:apply-templates />
+    </section>
+        </xsl:when>
+        <xsl:otherwise>
+    <section class="{local-name(.)}" id="{$ident}">
+
+        <xsl:apply-templates select="." mode="section-header" />
+        <xsl:apply-templates />
+
+    </section>
+        </xsl:otherwise>
+    </xsl:choose>
+
 </xsl:template>
 
 <!-- Modal template for content of a summary page   -->
@@ -4344,6 +4367,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <!-- with extension, just include it -->
         <xsl:otherwise>
             <xsl:element name="img">
+                <xsl:if test="@drawonme">
+                    <xsl:attribute name="class">draw_on_me</xsl:attribute>
+                    <xsl:attribute name="id">an_image_id</xsl:attribute>
+                </xsl:if>
+
+                <xsl:attribute name="id">
+                    <xsl:apply-templates select="." mode="internal-id" />
+                </xsl:attribute>
+
                 <xsl:attribute name="width">
                     <xsl:apply-templates select="." mode="get-width-percentage" />
                 </xsl:attribute>
@@ -6988,6 +7020,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <xsl:if test="$document-root//program[@interactive='pythontutor']">
         <script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
     </xsl:if>
+<!--
+    <script type="text/javascript" src="https://aimath.org/~farmer/demo/draw.js"></script>
+-->
+    <script type="text/javascript" src="draw_html.js"></script>
 </xsl:template>
 
 <!-- Console Session -->
@@ -8439,6 +8475,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <xsl:template name="css">
     <link href="{$html.css.server}/mathbook/stylesheets/{$html.css.file}" rel="stylesheet" type="text/css" />
     <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css" />
+
+<!--
+    <link href="https://aimath.org/~farmer/demo/draw.css" rel="stylesheet" type="text/css" />
+-->
+    <link href="draw.css" rel="stylesheet" type="text/css" />
+    <link href="https://aimath.org/~farmer/demo/datepicker.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-latest.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <xsl:call-template name="external-css">
         <xsl:with-param name="css-list" select="normalize-space($html.css.extra)" />
     </xsl:call-template>
