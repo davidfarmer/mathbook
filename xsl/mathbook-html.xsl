@@ -7023,6 +7023,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--
     <script type="text/javascript" src="https://aimath.org/~farmer/demo/draw.js"></script>
 -->
+    <script>
+    var role="instructor";
+    </script>
     <script type="text/javascript" src="draw_html.js"></script>
 </xsl:template>
 
