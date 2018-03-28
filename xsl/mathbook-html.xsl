@@ -8479,6 +8479,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--
     <link href="https://aimath.org/~farmer/demo/draw.css" rel="stylesheet" type="text/css" />
 -->
+    <script>
+    var role="instructor";
+    </script>
     <link href="draw.css" rel="stylesheet" type="text/css" />
     <link href="https://aimath.org/~farmer/demo/datepicker.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery-latest.min.js"></script> 
