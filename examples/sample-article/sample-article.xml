@@ -6932,7 +6932,7 @@ Draw the curve, and then make adjustments.
     <exercise xml:id="create-from-differences">
       <statement>
       <p df_id="create-from-differences-p-1">
-        Make up a sequences that have
+        Make up sequences that have
         <ol>
           <li>3, 3, 3, 3, <ellipsis/> as its second differences.</li>
           <li>1, 2, 3, 4, 5, <ellipsis/> as its third differences.</li>
