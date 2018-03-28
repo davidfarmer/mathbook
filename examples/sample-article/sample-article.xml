@@ -6657,167 +6657,167 @@ the xsltproc executable.
             <title>Advanced Numbering</title>
 
             <introduction>
-                <p>This section demonstrates the numbering<idx>numbering</idx> patterns used throughout <pretext />.  There are five subsections.  Two intermediate subsections each have two subsubsections.  This creates a total of seven divisions that are leaves of the document tree.  In each leaf we have placed two numbered theorems, for a total of fourteen.  There is no real content, this is just a demonstration.</p>
+                <p df_id="advanced-numbering-int-p-1">This section demonstrates the numbering<idx>numbering</idx> patterns used throughout <pretext />.  There are five subsections.  Two intermediate subsections each have two subsubsections.  This creates a total of seven divisions that are leaves of the document tree.  In each leaf we have placed two numbered theorems, for a total of fourteen.  There is no real content, this is just a demonstration.</p>
 
-                <p>Use values of <c>0</c> through <c>3</c> for the <c>numbering.theorems.level</c> parameter to see how these numbers change accordingly.  It is easiest to compare if you use <c>chunk.level &lt; 2</c> so the theorems all land on the same page if you are previewing in HTML.</p>
+                <p df_id="advanced-numbering-int-p-2">Use values of <c>0</c> through <c>3</c> for the <c>numbering.theorems.level</c> parameter to see how these numbers change accordingly.  It is easiest to compare if you use <c>chunk.level &lt; 2</c> so the theorems all land on the same page if you are previewing in HTML.</p>
             </introduction>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-1">
                 <title>One</title>
 
-                <p>A document leaf.</p>
+                <p df_id="advanced-numbering-ss-1-p-1">A document leaf.</p>
 
                 <theorem xml:id="theorem-number-01">
                     <title>First Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="theorem-number-01-p-1">No statement.</p></statement>
                 </theorem>
 
                 <theorem xml:id="theorem-number-02">
                     <title>Second Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="theorem-number-02-p-1">No statement.</p></statement>
                 </theorem>
 
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-2">
                 <title>Two</title>
 
-                <introduction><p>Further subdivided.</p></introduction>
+                <introduction><p df_id="advanced-numbering-ss-2-int-p-1">Further subdivided.</p></introduction>
 
-                <subsubsection>
+                <subsubsection df_id="advanced-numbering-ss-2-sss-1">
                     <title>Uno</title>
 
-                    <p>A document leaf.</p>
+                    <p df_id="advanced-numbering-ss-2-sss-1-p-1">A document leaf.</p>
 
                     <theorem xml:id="theorem-number-03">
                         <title>First Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-03-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-number-04">
                         <title>Second Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-04-p-1">No statement.</p></statement>
                     </theorem>
 
                 </subsubsection>
 
-                <subsubsection>
+                <subsubsection df_id="advanced-numbering-ss-2-sss-2">
                     <title>Dos</title>
 
-                    <p>A document leaf.</p>
+                    <p df_id="advanced-numbering-ss-2-sss-2-p-1">A document leaf.</p>
 
                     <theorem xml:id="theorem-number-05">
                         <title>First Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-05-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-number-06">
                         <title>Second Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-06-p-1">No statement.</p></statement>
                     </theorem>
 
                 </subsubsection>
 
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-3">
                 <title>Three</title>
 
-                <p>A document leaf.</p>
+                <p df_id="advanced-numbering-ss-3-p-1">A document leaf.</p>
 
                 <theorem xml:id="theorem-number-07">
                     <title>First Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="theorem-number-07-p-1">No statement.</p></statement>
                 </theorem>
 
                 <theorem xml:id="theorem-number-08">
                     <title>Second Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="theorem-number-08-p-1">No statement.</p></statement>
                 </theorem>
 
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-4">
                 <title>Four</title>
 
-                <introduction>
-                    <p>Further subdivided.  We include two theorems as numbered items in the introduction to test their numbers, which should always be logical.</p>
+                <introduction df_id="advanced-numbering-ss-4-int">
+                    <p df_id="advanced-numbering-ss-4-int-p-1">Further subdivided.  We include two theorems as numbered items in the introduction to test their numbers, which should always be logical.</p>
 
                     <theorem xml:id="theorem-good-one">
                         <title>Good Numbered Theorem One</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-good-one-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-good-two">
                         <title>Good Numbered Theorem Two</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-good-two-p-1">No statement.</p></statement>
                     </theorem>
 
                 </introduction>
 
-                <subsubsection>
+                <subsubsection df_id="advanced-numbering-ss-4-sss-1">
                     <title>Uno</title>
 
-                    <p>A document leaf.</p>
+                    <p df_id="advanced-numbering-ss-4-sss-1-p-1">A document leaf.</p>
 
                     <theorem xml:id="theorem-number-09">
                         <title>First Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-09-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-number-10">
                         <title>Second Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-10-p-1">No statement.</p></statement>
                     </theorem>
 
                 </subsubsection>
 
-                <subsubsection>
+                <subsubsection df_id="advanced-numbering-ss-4-sss-2-1">
                     <title>Dos</title>
 
-                    <p>A document leaf.</p>
+                    <p df_id="advanced-numbering-int-p-1">A document leaf.</p>
 
                     <theorem xml:id="theorem-number-11">
                         <title>First Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-11-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-number-12">
                         <title>Second Theorem</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-number-12-p-1">No statement.</p></statement>
                     </theorem>
 
                 </subsubsection>
 
-                <conclusion>
-                    <p>Conclusion now.  We include two theorems as numbered items in the conclusion to test their numbers, which are sometimes totally illogical and are inconsistent across output formats.  To see the effect, use <c>--stringparam numbering.theorems.level 3</c> in the <c>xsltproc</c> invocation. See this GitHub <url href="https://github.com/rbeezer/mathbook/issues/139">issue</url> for details.</p>
+                <conclusion df_id="advanced-numbering-ss-4-con">
+                    <p df_id="advanced-numbering-ss-4-con-p-1">Conclusion now.  We include two theorems as numbered items in the conclusion to test their numbers, which are sometimes totally illogical and are inconsistent across output formats.  To see the effect, use <c>--stringparam numbering.theorems.level 3</c> in the <c>xsltproc</c> invocation. See this GitHub <url href="https://github.com/rbeezer/mathbook/issues/139">issue</url> for details.</p>
 
                     <theorem xml:id="theorem-bad-one">
                         <title>Bad Numbered Theorem One</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-bad-one-p-1">No statement.</p></statement>
                     </theorem>
 
                     <theorem xml:id="theorem-bad-two">
                         <title>Bad Numbered Theorem Two</title>
-                        <statement><p>No statement.</p></statement>
+                        <statement><p df_id="theorem-bad-two-p-1">No statement.</p></statement>
                     </theorem>
 
                 </conclusion>
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-int-p-1">
                 <title>Five</title>
 
-                <p>A document leaf.</p>
+                <p df_id="advanced-numbering-int-p-1">A document leaf.</p>
 
                 <theorem xml:id="theorem-number-13">
                     <title>First Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="advanced-numbering-int-p-1">No statement.</p></statement>
                 </theorem>
 
                 <theorem xml:id="theorem-number-14">
                     <title>Second Theorem</title>
-                    <statement><p>No statement.</p></statement>
+                    <statement><p df_id="advanced-numbering-int-p-1">No statement.</p></statement>
                 </theorem>
 
             </subsection>
@@ -6825,21 +6825,21 @@ the xsltproc executable.
             <subsection xml:id="subsection-local-theorems">
                 <title>Theorems in This Section</title>
 
-                <p>We have a lot of theorems in this section, so we illustrate including an automatic list of these here.  We use the <c>elements</c> attribute to limit the list to <c>theorem</c> elements, and we use the <c>scope</c> attribute to limit the list to this <c>section</c>.  You can use an introductory <c>p</c> like this one, or not.  The list gets no title or visual separation, so use the usual subdivision elements to make that happen.  The <c>elements</c> attribute can be a space-delimited list of many different elements.  This list should not include the Fundamental Theorem of Calculus, Theorem<nbsp /><xref ref="theorem-FTC" />.  See a slightly different example in <xref ref="appendix-results" text="type-global" />.</p>
+                <p df_id="advanced-numbering-int-p-1">We have a lot of theorems in this section, so we illustrate including an automatic list of these here.  We use the <c>elements</c> attribute to limit the list to <c>theorem</c> elements, and we use the <c>scope</c> attribute to limit the list to this <c>section</c>.  You can use an introductory <c>p</c> like this one, or not.  The list gets no title or visual separation, so use the usual subdivision elements to make that happen.  The <c>elements</c> attribute can be a space-delimited list of many different elements.  This list should not include the Fundamental Theorem of Calculus, Theorem<nbsp /><xref ref="theorem-FTC" />.  See a slightly different example in <xref ref="appendix-results" text="type-global" />.</p>
 
                 <list-of elements="theorem" scope="section" />
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-5">
                 <title>A Title with ] a Right Bracket</title>
 
-                <p><latex /> has trouble with brackets that end up inside optional arguments, so this is only a check on the defense against that.</p>
+                <p df_id="advanced-numbering-ss-5-p-1"><latex /> has trouble with brackets that end up inside optional arguments, so this is only a check on the defense against that.</p>
             </subsection>
 
-            <subsection>
+            <subsection df_id="advanced-numbering-ss-6-1">
                 <title>Drawing some graphs of functions</title>
 
-<p>Plot the the derivative on the axes below.
+<p df_id="advanced-numbering-ss-6-1-p-1">Plot the the derivative on the axes below.
 Draw the curve, and then make adjustments.
 </p>
 
@@ -6858,17 +6858,17 @@ Draw the curve, and then make adjustments.
         <title>Reading Questions</title>
         <exercise xml:id="reading-S-1">
             <statement>
-                <p>Summarize the three conditions that allow us to quickly test if a set is a subspace.</p>
+                <p df_id="reading-S-1-p-1">Summarize the three conditions that allow us to quickly test if a set is a subspace.</p>
             </statement>
         </exercise>
         <exercise xml:id="reading-S-2">
             <statement>
-                <p>Consider the set of vectors<me>W=\left\{\begin{pmatrix}a\\b\\c\end{pmatrix}\ : \ 3a-2b+c=5\right\}</me>.  Is the set <m>W</m> a subspace of <m>\mathbb C^{3}</m>?  Explain your answer.</p>
+                <p df_id="reading-S-1-p-1">Consider the set of vectors<me>W=\left\{\begin{pmatrix}a\\b\\c\end{pmatrix}\ : \ 3a-2b+c=5\right\}</me>.  Is the set <m>W</m> a subspace of <m>\mathbb C^{3}</m>?  Explain your answer.</p>
             </statement>
         </exercise>
         <exercise xml:id="reading-S-3">
             <statement>
-                <p>Name five general constructions of sets of column vectors (subsets of <m>\mathbb C^{m}</m>) that we now know as subspaces.</p>
+                <p df_id="reading-S-1-p-1">Name five general constructions of sets of column vectors (subsets of <m>\mathbb C^{m}</m>) that we now know as subspaces.</p>
             </statement>
         </exercise>
 </exercises>
@@ -6878,29 +6878,29 @@ Draw the curve, and then make adjustments.
 -->
 <exercises mode="assign" xml:id="exercises_seq-polyfit">
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-ab">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-ab-p-1">
           Use polynomial fitting to find the formula for the <m>n</m>th term of the sequences <m>(a_n)_{n \ge 0}</m> below.</p>
-          <p>
-            <ol>
-              <li>
-                <p>
+          <p df_id="advanced-numbering-exer-ab-p-2">
+            <ol df_id="advanced-numbering-exer-ab-p-2-ol-1">
+              <li df_id="advanced-numbering-exer-ab-p-2-ol-1-li-1">
+                <p df_id="advanced-numbering-exer-ab-p-1-ol-1-li-1-p-1">
                   2, 5, 11, 21, 36,<ellipsis/>
                 </p>
               </li>
               <li>
-                <p>
+                <p df_id="advanced-numbering-exer-ab-p-3">
                   0, 2, 6, 12, 20,<ellipsis/>
                 </p>
               </li>
               <li>
-                <p>
+                <p df_id="advanced-numbering-exer-ab-p-4">
                   1, 2, 4, 8, 15, 26 <ellipsis/>
                 </p>
               </li>
               <li>
-                <p>
+                <p df_id="advanced-numbering-exer-ab-p-5">
                   3, 6, 12, 22, 37, <ellipsis/>.  After finding a formula here, compare to part (a).
                 </p>
               </li>
@@ -6909,11 +6909,11 @@ Draw the curve, and then make adjustments.
       
 
       </statement>
-      <solution>
-        <p>
+      <solution df_id="advanced-numbering-exer-ab-sol-1">
+        <p df_id="advanced-numbering-exer-ab-sol-1-p-1">
           <ol>
             <li>
-              <p>
+              <p df_id="advanced-numbering-exer-ab-sol-1-p-2">
                 Notice that the third differences are constant, so <m>a_n = an^3 + bn^2 + cn + d</m>. Use the terms of the sequence to solve for <m>a, b, c,</m> and <m>d</m> to get <m>a_n = \frac{1}{6} (12+11 n+6 n^2+n^3)</m>.
               </p>
             </li>
@@ -6929,9 +6929,9 @@ Draw the curve, and then make adjustments.
     </exercise>
 
 
-    <exercise>
+    <exercise xml:id="create-from-differences">
       <statement>
-      <p>
+      <p df_id="create-from-differences-p-1">
         Make up a sequences that have
         <ol>
           <li>3, 3, 3, 3, <ellipsis/> as its second differences.</li>
@@ -6943,57 +6943,57 @@ Draw the curve, and then make adjustments.
     </exercise>
 
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-ad">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-ad-p-1">
           Consider the sequence <m>1, 3, 7, 13, 21, \ldots</m>. Explain how you know the closed formula for the sequence will be quadratic. Then <q>guess</q> the correct formula by comparing this sequence to the squares <m>1, 4, 9, 16, \ldots</m> (do not use polynomial fitting).
         </p>
       </statement>
       <solution>
-        <p>
+        <p df_id="advanced-numbering-exer-ad-sol-1-p-1">
           The first differences are <m>2, 4, 6, 8, \ldots</m>, and the second differences are <m>2, 2, 2, \ldots</m>. Thus the original sequence is <m>\Delta^2</m>-constant, so can be fit to a quadratic.
         </p>
 
-        <p>
+        <p df_id="advanced-numbering-exer-ad-sol-1-p-2">
           Call the original sequence <m>a_n</m>. Consider <m>a_n - n^2</m>. This gives <m>0, -1, -2, -3, \ldots</m>. <em>That</em> sequence has closed formula <m>1-n</m> (starting at <m>n = 1</m>) so we have <m>a_n - n^2 = 1-n</m> or equivalently <m>a_n = n^2 - n + 1</m>.
         </p>
       </solution>
     </exercise>
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-ag">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-ag-p-1">
           Use a similar technique as in the previous exercise to find a closed formula for the sequence <m>2, 11, 34, 77, 146, 247,\ldots</m>.
         </p>
       </statement>
 
     </exercise>
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-ak">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-ak-p-1">
           Suppose <m>a_n = n^2 + 3n + 4</m>. Find a closed formula for the sequence of differences by computing <m>a_n - a_{n-1}</m>.
         </p>
       </statement>
       <solution>
-        <p>
+        <p df_id="advanced-numbering-exer-ak-p-1">
           <m>a_{n-1} = (n-1)^2 + 3(n-1) + 4 = n^2 + n + 2</m>. Thus <m>a_n - a_{n-1} = 2n+2</m>. Note that this is linear (arithmetic). We can check that we are correct. The sequence <m>a_n</m> is <m>4, 8, 14, 22, 32, \ldots</m> and the sequence of differences is thus <m>4, 6, 8, 10,\ldots</m> which agrees with <m>2n+2</m> (if we start at <m>n = 1</m>).
         </p>
       </solution>
     </exercise>
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-bc">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-bc-p-1">
           Repeat the above assuming this time <m>a_n = an^2 + bn + c</m>. That is, prove that every quadratic sequence has arithmetic differences.
         </p>
       </statement>
 
     </exercise>
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-bc">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-bc-p-1">
           Can you use polynomial fitting to find the formula for the <m>n</m>th term of the sequence 4, 7, 11, 18, 29, 47,
           <ellipsis/>? Explain why or why not.
         </p>
@@ -7003,9 +7003,9 @@ Draw the curve, and then make adjustments.
 
 
 
-    <exercise>
+    <exercise df_id="advanced-numbering-exer-ax">
       <statement>
-        <p>
+        <p df_id="advanced-numbering-exer-ax-p-1">
           Will the <m>n</m>th sequence of differences of <m>2, 6, 18, 54, 162, \ldots</m> ever be constant? Explain.
         </p>
       </statement>
@@ -7013,30 +7013,30 @@ Draw the curve, and then make adjustments.
     </exercise>
 
 
-    <exercise>
+    <exercise xml:id="double-fibonacci">
       <statement>
-        <p>
+        <p df_id="double-fibonacci-p-1">
           Consider the sequences <m>2, 5, 12, 29, 70, 169, 408,\ldots</m> (with <m>a_0 = 2</m>).
         </p>
 
-        <p>
-          <ol>
+        <p df_id="double-fibonacci-p-2">
+          <ol df_id="double-fibonacci-p-2-ol-1">
             <li>
-              <p>
+              <p df_id="double-fibonacci-p-2-ol-1-p-1">
                 Describe the rate of growth of this sequence.
 
 
               </p>
             </li>
             <li>
-              <p>
+              <p df_id="double-fibonacci-p-2-ol-1-p-2">
                 Find a recursive definition for the sequence.
 
 
               </p>
             </li>
             <li>
-              <p>
+              <p df_id="double-fibonacci-p-2-ol-1-p-3">
                 Find a closed formula for the sequence.
 
 
@@ -7044,7 +7044,7 @@ Draw the curve, and then make adjustments.
               </p>
             </li>
             <li>
-              <p>
+              <p df_id="double-fibonacci-p-2-ol-1-p-4">
                 If you look at the sequence of differences between terms, and then the sequence of second differences, the sequence of third differences, and so on, will you ever get a constant sequence? Explain how you know.
 
 
