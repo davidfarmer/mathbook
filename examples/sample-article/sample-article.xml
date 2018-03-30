@@ -6656,7 +6656,7 @@ the xsltproc executable.
         <section xml:id="advanced-numbering">
             <title>Advanced Numbering</title>
 
-            <introduction>
+            <introduction df_id="advanced-numbering-int">
                 <p df_id="advanced-numbering-int-p-1">This section demonstrates the numbering<idx>numbering</idx> patterns used throughout <pretext />.  There are five subsections.  Two intermediate subsections each have two subsubsections.  This creates a total of seven divisions that are leaves of the document tree.  In each leaf we have placed two numbered theorems, for a total of fourteen.  There is no real content, this is just a demonstration.</p>
 
                 <p df_id="advanced-numbering-int-p-2">Use values of <c>0</c> through <c>3</c> for the <c>numbering.theorems.level</c> parameter to see how these numbers change accordingly.  It is easiest to compare if you use <c>chunk.level &lt; 2</c> so the theorems all land on the same page if you are previewing in HTML.</p>
@@ -6682,7 +6682,7 @@ the xsltproc executable.
             <subsection df_id="advanced-numbering-ss-2">
                 <title>Two</title>
 
-                <introduction><p df_id="advanced-numbering-ss-2-int-p-1">Further subdivided.</p></introduction>
+                <introduction df_id="advanced-numbering-ss-2-int"><p df_id="advanced-numbering-ss-2-int-p-1">Further subdivided.</p></introduction>
 
                 <subsubsection df_id="advanced-numbering-ss-2-sss-1">
                     <title>Uno</title>
