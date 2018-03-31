@@ -5963,6 +5963,23 @@ the xsltproc executable.
                 </figure>
 
                 <p>We also need to test a <c>sidebyside</c> in a list.  The widths are now relative to the space given over to an indented item.  Here we nest and nest and nest and nest to get a big, obvious indentation, and then include an image at 100<percent /> width and no margin.  In your mind's eye, or with a ruler, check that the image spans all the way over to the right margin.<ol>
+                    <li>First we throw in</li>
+                    <li><p>some extra stuff</p></li>
+                    <li><p>so that we can also<ol>
+                        <li><p>check things<ol>
+                            <li>like where</li>
+                            <li>the images</li>
+                            <li><p>that are</p></li>
+                            <li><p>in a</p></li>
+                            <li>list might end up</li>
+                            </ol>
+                            when you click
+                            </p>
+                        </li>
+                        <li>on them.</li>
+                        </ol>
+                        </p>
+                    </li>
                     <li><p>This is<ol>
                         <li><p>a very<ol>
                             <li><p>wide<ol>
@@ -5974,6 +5991,7 @@ the xsltproc executable.
                             </ol></p></li>
                         </ol></p></li>
                     </ol></p></li>
+                    <li>And also put a reasonably long and very silly line at the end.</li>
                 </ol></p>
             </subsection>
 
