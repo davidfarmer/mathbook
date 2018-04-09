@@ -7904,7 +7904,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <aside id="sidebar-left" class="sidebar">
         <div class="sidebar-content">
             <nav id="toc">
+              <ul>
                  <xsl:apply-templates select="." mode="toc-items" />
+              </ul>
             </nav>
             <div class="extras">
                 <nav>
@@ -7974,7 +7976,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <xsl:apply-templates select="." mode="internal-id" />
                 </xsl:variable>
                 <!-- The link itself -->
+<!--
                 <h2 class="{$class}">
+-->
+                <li class="{$class}">
                     <xsl:element name="a">
                         <xsl:attribute name="href">
                             <xsl:value-of select="$outer-url" />
@@ -7991,7 +7996,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                             <xsl:apply-templates select="." mode="title-simple" />
                         </span>
                     </xsl:element>
+<!--
                 </h2>
+-->
                 <!-- We don't divide parts again, their  -->
                 <!-- chapters will be in $sublist anyway -->
                 <xsl:if test="not(self::part) and $adjusted-toc-level > 1">
@@ -8038,6 +8045,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                         </ul>
                     </xsl:if>
                 </xsl:if>  <!-- end $toc-level > 1 -->
+                </li>
             </xsl:if>  <!-- end structural, level 1 -->
         </xsl:for-each>
     </xsl:if>
