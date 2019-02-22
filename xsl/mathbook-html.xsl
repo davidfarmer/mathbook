@@ -9148,15 +9148,6 @@ var </xsl:text><xsl:value-of select="$applet-parameters" /><xsl:text> = {
 
 <xsl:template match="*" mode="calculator">
     <xsl:if test="$b-has-calculator and contains($html.calculator,'geogebra')">
-        <!-- <style>
-            .geogebra-container {
-                position: fixed;
-                bottom: 20px;
-                right: 10px;
-                width: 320px;
-                height: 600px;
-            }
-        </style> -->
         <div id="calculator-container" class="calculator-container" style="display: none">
             <div id="geogebra-calculator"></div>
         </div>
@@ -9194,11 +9185,9 @@ var </xsl:text><xsl:value-of select="$applet-parameters" /><xsl:text> = {
                 "autoHeight": true,
                 "disableAutoScale": false},
             true);
-<!--
-            window.addEventListener("load", function() {
-                ggbApp.inject('geogebra-calculator');
-            });
--->
+            <!--   The calculator is created by                    -->
+            <!--   ggbApp.inject('geogebra-calculator');           -->
+            <!--   which is inserted by code in pretext_add_on.js  -->
             </xsl:text>
         </script>
     </xsl:if>
