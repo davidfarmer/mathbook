@@ -7552,6 +7552,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
        <xsl:text>var role = 'student';&#xa;</xsl:text>
        <xsl:text>var guest_access = true;&#xa;</xsl:text>
        <xsl:text>var login_required = false;&#xa;</xsl:text>
+       <xsl:text>var js_version = </xsl:text><xsl:value-of select='$html.js.version'/><xsl:text>;&#xa;</xsl:text>
     </script>
 </xsl:template>
 
@@ -9193,9 +9194,11 @@ var </xsl:text><xsl:value-of select="$applet-parameters" /><xsl:text> = {
                 "autoHeight": true,
                 "disableAutoScale": false},
             true);
+<!--
             window.addEventListener("load", function() {
                 ggbApp.inject('geogebra-calculator');
             });
+-->
             </xsl:text>
         </script>
     </xsl:if>
@@ -9706,6 +9709,7 @@ var </xsl:text><xsl:value-of select="$applet-parameters" /><xsl:text> = {
     <script src="{$html.js.server}/js/lib/jquery.sticky.js" ></script>
     <script src="{$html.js.server}/js/lib/jquery.espy.min.js"></script>
     <script src="{$html.js.server}/js/{$html.js.version}/pretext.js"></script>
+    <script src="{$html.js.server}/js/{$html.js.version}/pretext_add_on.js"></script>
 </xsl:template>
 
 <!-- Font header -->
